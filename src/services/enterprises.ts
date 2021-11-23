@@ -36,5 +36,14 @@ export const enterpriseServices = {
     } else {
       return false
     }    
+  },
+  update: async (enterpriseData: IEnterpriseDTO, id: string): Promise<boolean> => {
+    const { matchedCount } = await Enterprise.updateOne({ _id: id}, enterpriseData)
+    
+    if(matchedCount > 0) {
+      return true
+    } else {
+      return false
+    }
   }
 }

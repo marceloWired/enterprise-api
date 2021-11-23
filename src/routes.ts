@@ -1,5 +1,5 @@
 import { Router, Request, Response } from 'express'
-import { enterpriseCreateController, enterpriseListController, enterpriseFindController, enterpriseDeleteController } from './controllers/enterprise/'
+import { enterpriseCreateController, enterpriseListController, enterpriseFindController, enterpriseDeleteController,enterpriseUpdateController } from './controllers/enterprise/'
 
 const routes = Router()
 
@@ -11,8 +11,6 @@ routes.post('/enterprises', enterpriseCreateController.store)
 
 routes.delete('/enterprises/:id', enterpriseDeleteController.delete)
 
-routes.put('/enterprises', (req: Request, res: Response) => {
-  res.status(200).json({"message": "Should update an enterprise"})
-})
+routes.put('/enterprises/:id', enterpriseUpdateController.update)
 
 export default routes
