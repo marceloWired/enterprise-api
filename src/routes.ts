@@ -1,11 +1,9 @@
 import { Router, Request, Response } from 'express'
-import { enterpriseCreateController } from './controllers/enterprise/'
+import { enterpriseCreateController, enterpriseList } from './controllers/enterprise/'
 
 const routes = Router()
 
-routes.get('/enterprise', (req: Request, res: Response) => {
-  res.status(200).json({"message": "Should return a list of enterprises"})
-})
+routes.get('/enterprise', enterpriseList.listAll)
 
 routes.post('/enterprise', enterpriseCreateController.store)
 
