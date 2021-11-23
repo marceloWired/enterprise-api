@@ -31,7 +31,7 @@ export const enterpriseCreateController = {
 
     const result = await enterpriseServices.create(enterpriseData)
 
-    return res.status(201).json(result)
+    return res.status(201).json({"data": result})
 
     } catch (error) {
       return res.status(500).json({ "serverError": "Something wrent wrong. Please try again in a few moments" })

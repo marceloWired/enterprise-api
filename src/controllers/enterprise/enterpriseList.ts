@@ -9,7 +9,7 @@ export const enterpriseListController =  {
     
       const queryResult = await enterpriseServices.findAll(limit)
     
-      return res.status(200).json(queryResult)
+      return res.status(200).json({"data": queryResult})
     } catch (error) {
       return res.status(500).json({"serverError": "Something wrent wrong. Try again in a few moments"})
     }
