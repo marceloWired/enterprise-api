@@ -1,7 +1,7 @@
 import { Request, Response} from 'express'
 import { enterpriseServices } from '../../services/enterprises'
 
-export const enterpriseList =  {
+export const enterpriseListController =  {
   listAll: async (req: Request, res: Response) => {
     try {
       const limitString = req.query['_limit'] ? req.query['_limit'].toString() : ''
