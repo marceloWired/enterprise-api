@@ -1,0 +1,10 @@
+{
+  "name": "enterprises-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "marceloWired <marcelo.santosdev1@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.5.2"
+  }
+}
