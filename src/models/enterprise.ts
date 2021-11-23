@@ -15,4 +15,4 @@ const enterpriseSchema = new Schema({
   }
 })
 
-export default model('Enterprise', enterpriseSchema)
+export const Enterprise = model('Enterprise', enterpriseSchema)

@@ -1,20 +1,19 @@
 import { Router, Request, Response } from 'express'
+import { enterpriseCreateController } from './controllers/enterprise/'
 
 const routes = Router()
 
-routes.get('/enterprises', (req: Request, res:Response) => {
+routes.get('/enterprise', (req: Request, res: Response) => {
   res.status(200).json({"message": "Should return a list of enterprises"})
 })
 
-routes.post('/enterprises', (req: Request, res: Response) => {
-  res.status(200).json({"message": "Should create a new enterprise"})
-})
+routes.post('/enterprise', enterpriseCreateController.store)
 
-routes.put('/enterprises', (req: Request, res: Response) => {
+routes.put('/enterprise', (req: Request, res: Response) => {
   res.status(200).json({"message": "Should update an enterprise"})
 })
 
-routes.delete('/enterprises/:id', (req: Request, res: Response) => {
+routes.delete('/enterprise/:id', (req: Request, res: Response) => {
   res.status(200).json({"message": "Should delete an enterprise"})
 })
 
