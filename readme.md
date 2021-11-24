@@ -57,4 +57,4 @@ Por padrão, a aplicação irá rodar na porta 3002.
 
 Você pode conferir o frontend que consome essa aplicação clicando <a href="https://enterprise-frontend-alterado.vercel.app/">AQUI</a>
 
-Caso julgue , é possível acessar o link da API diretamente <a href="https://enterprise-backend-api.herokuapp.com/">AQUI</a>
+Caso julgue necessário, é possível acessar o link da API diretamente <a href="https://enterprise-backend-api.herokuapp.com/">AQUI</a>
